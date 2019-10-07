@@ -1,0 +1,43 @@
+{
+    "name": "glue-agency/category-sources",
+    "description": "View your entries by their category-based taxonomies in Craft",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "glue",
+        "category",
+        "sources",
+        "category-sources"
+    ],
+    "support": {
+        "docs": "https://github.com/glue-agency/category-sources/blob/master/README.md",
+        "issues": "https://github.com/glue-agency/category-sources/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Glue",
+            "homepage": "https://glue.be"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "glueagencygluecategorysources\\gluecategorysources\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Category Sources",
+        "handle": "category-sources",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/glue-agency/category-sources/master/CHANGELOG.md",
+        "class": "glueagencygluecategorysources\\gluecategorysources\\GlueCategorySources"
+    }
+}

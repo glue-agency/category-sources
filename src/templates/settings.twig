@@ -1,0 +1,29 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * Category Sources plugin for Craft CMS 3.x
+ *
+ * Category Sources Settings.twig
+ *
+ * @author    Glue
+ * @copyright Copyright (c) 2019 Glue
+ * @link      https://glue.be
+ * @package   GlueCategorySources
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+{% do view.registerAssetBundle("glueagencygluecategorysources\\gluecategorysources\\assetbundles\\gluecategorysources\\GlueCategorySourcesAsset") %}
+
+{{
+    forms.checkboxGroup({
+        label: 'Category Groups',
+        instructions: 'Choose which category groups should be included in entry source lists.',
+        id: 'categoryGroups',
+        name: 'categoryGroups',
+        options: options,
+        values: values
+    })
+}}
